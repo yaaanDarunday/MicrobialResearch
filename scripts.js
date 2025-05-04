@@ -90,3 +90,13 @@ overlay.onclick = () => {
     closeMainPopup();
     closeAllImagePopups();
 };
+
+const scrollUpBtn = document.querySelector(".scroll-up");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollUpBtn.classList.add("show");
+  } else {
+    scrollUpBtn.classList.remove("show");
+  }
+});
