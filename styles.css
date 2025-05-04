@@ -495,3 +495,38 @@ footer a {
         height: 200px;
     }
 }
+
+.scroll-up {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    background-color: #44624a;
+    border: none;
+    padding: 16px;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+  }
+  
+  .scroll-up.show {
+    display: block;
+  }
+  
+  .scroll-up:hover {
+    transform: scale(1.1);
+    background-color: #2f4a35;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+  }
+  
+  .scroll-up img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* make white icons show on dark background */
+  }
+  
+  
