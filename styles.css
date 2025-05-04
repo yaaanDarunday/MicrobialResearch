@@ -416,10 +416,34 @@ footer {
     column-gap: 16px;
     background-color: #44624A;
     color: white;
+    padding: 20px;
 }
 
 footer a {
     color: white;
+}
+
+footer p {
+    margin: 0;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-link {
+    display: flex;
+    column-gap: 16px;
 }
 
 /* Media Queries for Responsiveness */
@@ -528,5 +552,4 @@ footer a {
     height: 24px;
     filter: invert(1); /* make white icons show on dark background */
   }
-  
   
