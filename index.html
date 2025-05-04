@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlene Project</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="top-side">
+            <h1>CITIZEN SCIENCE<br> AND <br> MICROBIOLOGY</h1>
+            <div class="nav-btns">
+                <div class="top-side-btns">
+                    <a href="#importance"><button class="importance">Importance</button></a>
+                    <a href="#ethics"><button class="ethics">Ethics</button></a>
+                    <a href="#discoveries"><button class="discoveries">Discoveries</button></a>
+                </div>
+                <div class="bottom-side-btns">
+                    <a href="#public-involvement"><button class="public-involvement">Public Involvement</button></a>
+                    <a href="#join-us"><button class="join-us">Join Us</button></a>
+                    <a href="#referencess"><button class="references">Reference</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-side">
+            <div class="bottom-left-side">
+                <h2>Why Microbial Research Matters?</h2>
+                <p>Microbial research is crucial because microorganisms, like bacteria and viruses, play fundamental roles in human health, the environment, and even our planet's climate. Understanding microbes helps us prevent and treat diseases, develop sustainable practices, and address global challenges like climate change and antibiotic resistance. </p>
+            </div>
+            <div class="bottom-right-side">
+                <div class="bottom-right-top-side">
+                    <p><b>Microbiology</b> study of microorganisms, or microbes, a diverse group of generally minute simple life-forms that include bacteria, archaea, algae, fungi, protozoa, and viruses. The field is concerned with the structure, function, and classification of such organisms and with ways of both exploiting and controlling their activities.</p>
+                </div>
+                <div class="bottom-right-bottom-side">
+                    <p><b>Microbial research</b> aims to uncover how microbes function, evolve, and impact human health, ecosystems, and technology.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="overlay" class="overlay"></div>
+        <div class="importance" id="importance">
+            <h2>Importance in Health, Environment, Food, and Biotechnology</h2>
+            <div class="importance-btns">
+                <button id="health-btn" class="health">Health</button>
+                <div id="health-info" class="health-info popup">
+                    <button id="close-btn" class="close-btn" onclick="closePopUp()">X</button>
+                    <h2 style="color: white;">Health</h2>
+                    <p>Beneficial microbes, particularly those in our gut microbiome, play a crucial role in digestion, vitamin synthesis, and immune system regulation. For instance, gut bacteria help break down complex carbohydrates and produce essential vitamins like B12 and K. Disruptions in these microbial communities can lead to health issues, highlighting the importance of maintaining a balanced microbiome.​</p>
+                </div>
+                <button id="environment-btn" class="environment">Environment</button>
+                <div id="environment-info" class="environment-info popup">
+                    <button id="close-btn" class="close-btn" onclick="closePopUp()">X</button>
+                    <h2 style="color: white;">Environment</h2>
+                    <p>Microorganisms are vital for ecological balance. They decompose organic matter, recycling nutrients like carbon and nitrogen back into ecosystems. Certain bacteria also fix atmospheric nitrogen, converting it into forms usable by plants, thus supporting plant growth and soil fertility.​​</p>
+                </div>
+                <button id="food-btn" class="food">Food</button>
+                <div id="food-info" class="food-info popup">
+                    <button id="close-btn" class="close-btn" onclick="closePopUp()">X</button>
+                    <h2 style="color: white;">Food</h2>
+                    <p>In the food industry, microbes are essential for fermentation processes that produce bread, yogurt, cheese, and alcoholic beverages. They enhance flavor, texture, and nutritional value while also acting as natural preservatives. For example, lactic acid bacteria ferment sugars into lactic acid, which not only preserves food but also imparts a tangy flavor.​</p>
+                </div>
+                <button id="biotechnology-btn" class="biotechnology">Biotechnology</button>
+                <div id="biotechnology-info" class="biotechnology-info popup">
+                    <button id="close-btn" class="close-btn" onclick="closePopUp()">X</button>
+                    <h2 style="color: white;">Biotechnology</h2>
+                    <p>Microbial biotechnology harnesses microorganisms for various applications, including the production of antibiotics, enzymes, and biofuels. Genetically engineered microbes are used to manufacture insulin, human growth hormones, and other therapeutics. Additionally, microbes play a role in environmental cleanup efforts, such as bioremediation of oil spills and waste treatment.​</p>
+                </div>
+            </div>
+        </div>
+        <div class="public-involvement" id="public-involvement">
+            <h2>Public Involvement</h2>
+            <div class="public-involvement1">
+                <button class="close-btn">X</button>
+                <h3>1. Citizen Science & Public Involvement</h3>
+                <div class="images">
+                    <div class="image1">
+                        <img src="./images/number1.png" alt="">
+                        <p>Participating in Citizen Science Projects</p>
+                    </div>
+                    <div class="image2">
+                        <img src="./images/number2.png" alt="">
+                        <p>Environmental Monitoring</p>
+                    </div>
+                    <div class="image3">
+                        <img src="./images/number3.png" alt="">
+                        <p>App or Device-Based  Monitoring</p>
+                    </div>
+                </div>
+
+                <!-- Overlay -->
+                <div id="overlay" class="overlay"></div>
+
+                <!-- Image Popup 1 -->
+                <div id="img-popup1" class="img-popup">
+                    <button class="close-btn">X</button>
+                    <h3 style="color: white;">Citizen Science Projects</h3>
+                    <p>Details about participating in citizen science projects to contribute to research data collection and analysis.</p>
+                </div>
+
+                <!-- Image Popup 2 -->
+                <div id="img-popup2" class="img-popup">
+                    <button class="close-btn">X</button>
+                    <h3 style="color: white;">Environmental Monitoring</h3>
+                    <p>Details about how the public can help monitor environmental changes, air quality, and biodiversity.</p>
+                </div>
+
+                <!-- Image Popup 3 -->
+                <div id="img-popup3" class="img-popup">
+                    <button class="close-btn">X</button>
+                    <h3 style="color: white;">App or Device-Based Monitoring</h3>
+                    <p>Explanation of using apps or devices to track environmental or health data for public awareness.</p>
+                </div>
+
+
+            </div>
+            <div class="public-involvement2">
+                <button class="close-btn">X</button>
+                <h3>2. Education and Awareness</h3>
+                <p>The public plays a key role in microbial research by spreading awareness and educating others about microbiology, hygiene, and health. According to Timmis et al. (2016), increasing microbial literacy helps people understand the importance of microbes in daily life and encourages responsible behavior regarding antibiotics and hygiene. In the Philippine context, San Juan and Ching (2021) emphasize the need to strengthen science education to improve public understanding of microbiology. Through schools, social media, and community programs, individuals can help foster a more informed and engaged society.</p>
+            </div>
+            <div class="public-involvement-3">
+                <button class="close-btn">X</button>
+                <h3>3. Funding and Crowdfunding</h3>
+                <p>Individuals can actively support microbiology research by donating to established institutions or participating in crowdfunding campaigns. According to Oliveira et al. (2016), funding plays a crucial role in advancing scientific studies, including microbiology, by enabling researchers to explore new areas such as microbial resistance and the human microbiome.
+                </p>
+                <p>Platforms like <a href="https://experiment.com" target="_blank">Experiment.com</a> allow individuals to directly fund microbiology projects, creating an accessible way for the public to contribute to scientific discoveries.</p>
+            </div>
+        </div>
+        <div class="ethics" id="ethics">
+            <h2>Ethics & Safety Considerations</h2>
+            <div class="ethics-left-side">
+                <p>While public involvement in microbiology is valuable, it must always be guided by ethics and safety. Working with microbes—even at a basic level—requires caution, as some microorganisms can cause disease or environmental harm if mishandled. According to the NIH and other experts, following safety protocols and ethical guidelines is essential to protect individuals, communities, and ecosystems (NIEHS, n.d.; Kim et al., 2018). Researchers emphasize the importance of biosafety training, proper sample handling, and awareness of microbial risks (König, 2022; Lim et al., 2018). Public contributors should always work under professional supervision or use citizen science programs that prioritize safety.</p>
+    
+                <img src="./images/ethics.png" alt="">
+            </div>
+        </div>
+        <div class="join-us" id="join-us">
+            <h2>Join Us</h2>
+            <p>You don’t need to be a scientist to help microbiology—join citizen science projects, share facts online, or support research through donations or volunteering. Sites like Zooniverse and CitizenScience.gov offer easy ways to contribute from home and support science that benefits all.</p>
+            <div class="join-us-image-link">
+                <div class="left-image">
+                    <a href="https://www.citizenscience.gov/#" target="_blank"><img src="./images/left.png" alt=""></a>
+                </div>
+                <div class="right-image">
+                    <a href="https://www.zooniverse.org" target="_blank"><img src="./images/right.png" alt=""></a>
+
+                </div>
+            </div>
+           
+        </div>
+        <div class="discoveries" id="discoveries">
+            <h2>Discoveries Made Through Public Contributions</h2>
+            <div class="discovery-info">
+                <div class="discovery-right-image">
+                    <div class="left-text">
+                        <h3>1. Antibiotics Unearthed: Engaging Students in Soil Microbe Research</h3>  
+                        <p>The "Antibiotics Unearthed" project, run by the Microbiology Society in the UK, involves students and the public in collecting soil samples to discover new antibiotic-producing microorganisms. Inspired by the Small World Initiative, this program aims to address the decreasing number of effective antibiotics by tapping into the diverse microbial life found in various environments.</p>                  
+                    </div>
+                    <img src="./images/d1.png" alt="">
+                </div>
+                <div class="discovery-left-image">
+                    <img src="./images/d2.png" alt="">
+                    <div class="right-text">
+                        <h3>2. UPLB Museum of Natural History – Microbial Culture Collection</h3>
+                        <p>The University of the Philippines Los Baños (UPLB) houses a Microbial Culture Collection (MCC) comprising over 4,000 strains of bacteria, yeasts, molds, and other microorganisms. This collection has been instrumental in discovering novel thermophilic archaea, such as Caldivirga maquilingensis and Caldisphaera lagunensis, isolated from the hot springs of Mt. Makiling. The MCC is affiliated with the Philippine National Collection of Microorganisms and actively engages in microbial biodiversity research.</p>
+                    </div>
+                </div>
+                <div class="discovery-right-image">
+                    <div class="left-text">
+                        <h3>3. Student-Discovered Microbial Consortia: Educational Contributions to Microbial Research</h3>  
+                        <p>At institutions like the University of California, Davis, and the Rochester Institute of Technology, students have participated in projects isolating and sequencing microbes from unique environments, such as salt flats and mushrooms. These educational initiatives have led to the discovery of new microbial species and contributed valuable data to the scientific community.​</p>                  
+                    </div>
+                    <img src="./images/d3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="quote" id="quote">
+            <p><b><i>"To know the world, one must get intimately acquainted with its tiniest inhabitants."</i></b></p>
+            <p class="name">Anton Van Leeuwenhoek</p>
+        </div>
+        <div class="references" id="references">
+            <h2>References</h2>
+            <ul>
+              <li>Encyclopædia Britannica. (n.d.). <em>Microbiology.</em> In Encyclopædia Britannica.</li>
+              <li>Sarkar, A., & Pal, A. (2022). Importance of microbes in human life. <em>International Journal of Research Publication and Reviews</em>, 3(6), 1435–1439.</li>
+              <li>Genetics Science Learning Center. (n.d.). Meet the microbes. <em>Learn.Genetics.</em> University of Utah. Retrieved April 30, 2025.</li>
+              <li>Thomas, L. (2023, March 9). Microbes and biotechnology. <em>News-Medical.net.</em> Retrieved April 30, 2025.</li>
+              <li>University of California – San Diego. (2019, October 17). American Gut Project launches pilot in the Philippines. <em>Jacobs School of Engineering.</em></li>
+              <li>Asian Scientist Newsroom. (2016, June 17). Mapping the Asian microbiome. <em>Asian Scientist.</em></li>
+              <li>GLOBE Program. (n.d.). Philippines citizen science. <em>GLOBE.gov.</em> Retrieved April 30, 2025.</li>
+              <li>Blue CARES Project. (n.d.). Citizen science activities. <em>University of the Philippines Diliman.</em> Retrieved April 30, 2025.</li>
+              <li>ABS-CBN Foundation. (n.d.). Environment programs. Retrieved April 30, 2025.</li>
+              <li>Timmis, K., Timmis, J. K., Brüssow, H., Fernández, L. A., Ramos, J. L., & Pühler, A. (2016). The urgent need for microbiology literacy in society. <em>Environmental Microbiology</em>, 18(5), 1405–1412.</li>
+              <li>San Juan, J. A., & Ching, G. S. (2021). Science education in the Philippines: Challenges and prospects for development. <em>Frontiers in Education</em>, 6, Article 735297.</li>
+              <li>Oliveira, L., Lima, L. M., & Ferreira, P. S. (2016). The role of crowdfunding in scientific research funding: Opportunities and challenges. <em>Frontiers in Psychology</em>, 7, 847.</li>
+              <li>Microbiology resource of the Month: Student-discovered Microbial Consortia. <em>ASM.org.</em> (n.d.).</li>
+              <li>Roberts, A. P. (2020). Swab and Send: a Citizen science, Antibiotic Discovery Project. <em>Future Science OA</em>, 6(6).</li>
+            </ul>
+          </div>
+    </main>
+    <footer>
+        <p> © 2025 Carlene Baaco</p>
+        <a href="#importance">Importance</a>
+        <a href="">Public Involvement</a>
+        <a href="">Ethics</a>
+        <a href="">Discoveries</a>
+        <a href="">Join Us</a>
+        <a href="">References</a>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

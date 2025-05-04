@@ -1,0 +1,497 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+    line-height: 1.75;
+    overflow-x: hidden;
+}
+
+h2 {
+    color: #1D3F16;
+}
+
+h3 {
+    color: #4B6D52;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.importance, 
+.ethics, 
+.public-involvement, 
+.join-us, 
+.discoveries, 
+.quote, 
+.references {
+    margin-bottom: 130px;
+    padding: 0 56px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+header {
+    min-height: 100vh;
+    width: 100%;
+    margin-bottom: 130px;
+}
+
+header h1 {
+    margin: 15px 0 8px 0;
+    font-size: 55px;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: -1px;
+}
+
+.top-side {    
+    padding: 15px 0;
+    background-image: url("./images/image-header-Picsart-AiImageEnhancer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-side h1 {
+    text-align: center;
+    color: #1D3F16;
+}
+
+.nav-btns {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 12px;
+}
+
+.top-side-btns {
+    display: flex;
+    column-gap: 12px;
+}
+
+.bottom-side-btns {
+    display: flex;
+    column-gap: 12px;
+    padding: 0;
+}
+
+.nav-btns button {
+    margin: 0;
+    padding: 0 25px;
+    font-weight: 600;
+    color: white;
+    background-color: #3E5743;
+    border: none;
+    border-radius: 150px;
+    font-size: 16px;
+    width: 200px;
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+.nav-btns button:hover {
+    background-color: transparent;
+    color: #3E5743;
+    border: 1px solid #3E5743;
+}
+
+.bottom-side {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 56px;
+    background-color: #A9CA9E;
+    padding: 15px  56px;
+}
+
+.importance h2 {
+    text-align: center;
+}
+
+.importance-btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 45px;
+    position: relative;
+}
+
+.gray-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.702);
+    z-index: 999;
+}
+
+.close-btn {
+    border-radius: 50%;
+    color: #ffff;
+    border: 2px solid #ffff;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    position: absolute;
+    right: 30px;
+}
+
+.popup {
+    display: none;
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: absolute;
+    background-color: #44624a;
+    padding: 25px 50px;
+    border-radius: 16px;
+    z-index: 2;
+    color: white;
+    max-width: 600px;
+}
+
+.popup.show {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.overlay.show {
+    display: block;
+}
+
+.importance-btns > button {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #A9CA9E;
+    border-radius: 18px 36px 18px 36px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.importance-btns button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: #3E5743;
+}
+
+.health {
+    background-image: url("./images/Health.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.environment {
+    background-image: url("./images/Environment.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.food {
+    background-image: url("./images/Food.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.biotechnology {
+    background-image: url("./images/Biotech.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.public-involvement > div {
+    margin-bottom: 40px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.images > div {
+    width: 250px;
+}
+
+.images > div > img {
+    width: 100%;
+    height: 200px;
+    transition: all 0.3s ease;
+}
+
+.images > div > img:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.images > div > p {
+    margin-top: 8px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.img-popup {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #44624a;
+    padding: 30px;
+    border-radius: 16px;
+    color: white;
+    width: 60%;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.img-popup.show {
+    display: block;
+}
+
+.ethics-left-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ethics-left-side p {
+    width: 600px;
+}
+
+.ethics-left-side > img {
+    margin: auto;
+    width: 280px;
+    height: 280px;
+    box-shadow: 15px 15px 4px 0 #A9CA9E;
+}
+
+.join-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #A9CA9E;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.join-us h2 {
+    margin: 0;
+}
+
+.join-us > p {
+    margin: auto;
+    width: 800px;
+}
+
+.join-us-image-link {
+    margin-top: 36px;
+    display: flex;
+    column-gap: 2px;
+    justify-content: center;
+}
+
+.left-image img,
+.right-image img {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.left-image img:hover,
+.right-image img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.left-image p,
+.right-image p {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    z-index: 0;
+}
+
+.left-image img:hover p {
+    display: block;
+}
+
+.discovery-info > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.left-text {
+    width: 550px;
+}
+
+.right-text {
+    width: 550px;
+}
+
+.discovery-info img {
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #A9CA9E;
+    border-radius: 16px 32px 16px 32px;
+    box-shadow: 12px 12px 4px 0 #44624A;
+}
+
+.quote {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 130px;
+    padding: 12px 16px;
+    border-left: 8px solid #44624A;
+    background-color: #A9CA9E;
+    text-align: center;
+}
+
+.quote p {
+    margin: 0;
+}
+
+.quote .name {
+    margin-top: 6px;
+}
+
+.references ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    line-height: 1.8;
+    font-size: 16px;
+}
+
+#references li {
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    background-color: #44624A;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .top-side-btns, .bottom-side-btns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-btns button {
+        width: 150px;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .importance-btns > button {
+        width: 200px;
+        height: 200px;
+        font-size: 18px;
+    }
+
+    .images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images > div {
+        width: 90%;
+        margin-bottom: 16px;
+    }
+
+    .ethics-left-side p, .left-text, .right-text {
+        width: 100%;
+    }
+
+    .join-us > p {
+        width: 90%;
+    }
+
+    .discovery-info > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .top-side h1 {
+        font-size: 24px;
+    }
+
+    .importance-btns > button {
+        width: 150px;
+        height: 150px;
+        font-size: 16px;
+    }
+
+    .join-us > p {
+        width: 100%;
+    }
+
+    .discovery-info img {
+        width: 200px;
+        height: 200px;
+    }
+}
